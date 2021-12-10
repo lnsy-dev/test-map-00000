@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Anonymous Real Estate Company</title>
+	<script type="module" src="./geo-map/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="./geo-map/geo-map.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="variables.css">
+	<style>
+		.mapboxgl-ctrl {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div id="logo"><a href="/"><img src="/assets/logo.svg"></a></div>
+
+		<section class="menu" style="float:right;">
+			<a href="about.html">Our Story</a>
+			<a href="contact.html">Contact</a>
+		</section>
+
+
+	</header>
+
+	<main>
+
+		<a href="map.html">
+			<geo-map
+
+				accesstoken=pk.eyJ1IjoibGluZHNleW15c3NlIiwiYSI6ImNqOGNlYjMzbDA5am8zMmxid2oyc3hrc2cifQ.hK6NXKEl7bK7va2pRtY0Yw
+				styleurl=mapbox://styles/lindseymysse/ckuybrkna8p3o18mvlg7ks6bf
+				id=geo_map 
+        latitude="37.90458607848207"
+        longitude="-112.35652554657601"
+				zoom=9.625824192241094
+				bearing=33
+				pitch=90
+				slideshow
+				locked
+			>
+				
+<map-location
+        latitude="37.90458607848207"
+        longitude="-112.35652554657601"
+        zoom="14.016395603402017"
+        pitch="85"
+        bearing="33.799999999999834"
+        title=""
+      >
+            <map-marker></map-marker>
+
+                
+      </map-location><map-location
+        latitude="33.29984450832369"
+        longitude="-116.35665667139853"
+        zoom="17.437336709536556"
+        pitch="84.99999999999997"
+        bearing="15.399999999999856"
+        title=""
+      >
+            <map-marker></map-marker>
+
+                
+      </map-location><map-location
+        latitude="34.239825472421884"
+        longitude="-116.81017166483564"
+        zoom="17.064121429309747"
+        pitch="85"
+        bearing="-161.40000000026401"
+        title=""
+      >
+            <map-marker></map-marker>          
+   		<map-location
+        latitude="32.30493280809502"
+        longitude="-109.50517453863459"
+        zoom="18.360249396509573"
+        pitch="82.62858360903111"
+        bearing="-149.39999999993972"
+        title=""
+      >
+
+            <map-marker></map-marker>
+
+                
+      </map-location><map-location
+        latitude="36.79833867012907"
+        longitude="-114.13389598924074"
+        zoom="15.829202922821006"
+        pitch="78.590591049207"
+        bearing="-80.6000000000787"
+        title=""
+      >
+
+            <map-marker></map-marker>
+
+                
+      </map-location><map-location
+        latitude="38.94565800000001"
+        longitude="-119.96361000000002"
+        zoom="17.99999999969485"
+        pitch="84.20860227488376"
+        bearing="-22.20000000032997"
+        title=""
+      >
+
+      <map-marker></map-marker>
+                
+      </map-location>
+                
+
+      <script type="module">
+
+      	import { ready } from './geo-map/helpers.js'
+
+				ready( () => {
+					geo_map.map.on('moveend', function(){
+
+						setTimeout(() => {
+							geo_map.dispatchEvent(new CustomEvent('NEXT SLIDE'))
+						}, 10000)
+					})
+
+					setTimeout(() => {
+						geo_map.dispatchEvent(new CustomEvent('NEXT SLIDE'))
+					}, 10000)
+				})
+      </script>
+			</geo-map>
+
+		</a>
+		<h1 id="tagline">Put down roots in a shifting world</h1> 
+
+	</main>
+
+<section id="pitch">
+	<article>
+		<img src="assets/beachlife.svg">
+		<h1>Carefully Vetted Real Estate Listings</h1>
+		<p>We've carefully scoured real estate listings to get you the most meme-worth properties to spend your crypto dollars</p>
+
+	</article>
+
+	<article>
+		<img src="assets/roadtrip.svg">
+
+		<h1>Meme Worth Properties</h1>
+		<p>Think about the social media cred we're you're going to get by buying this!</p>
+
+	</article>
+
+
+	<article>
+
+		<img src="assets/notalone.svg">
+
+		<h1>How's the Internet?</h1>
+		<p>Surely Elon will figure this out soon!</p>
+
+	</article>
+
+</section>
+
+
+
+	<footer>
+				<div><a href="https://map.garden">That will never scale!</a> A Map Garden Joint</div>
+
+
+	</footer>
+</body>
+</html>
