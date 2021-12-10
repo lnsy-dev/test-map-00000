@@ -31,7 +31,7 @@
 <body>
 
 	<header>
-		<div id="logo"><a href="/"><img src="assets/logo.svg"></a></div>
+		<div id="logo"><a href="https://lindseyjohnasterius.github.io/test-map-00000/"><img src="assets/logo.svg"></a></div>
 
 		<section class="menu" style="float:right;">
 			<a href="map.html">Listings</a>
@@ -67,6 +67,7 @@
         pitch="85"
         bearing="33.799999999999834"
         title=""
+        speed="0.5"
       >
             <map-marker></map-marker>
 
@@ -78,6 +79,8 @@
         pitch="84.99999999999997"
         bearing="15.399999999999856"
         title=""
+                speed="0.5"
+
       >
             <map-marker></map-marker>
 
@@ -89,6 +92,8 @@
         pitch="85"
         bearing="-161.40000000026401"
         title=""
+                speed="0.5"
+
       >
             <map-marker></map-marker>          
    		<map-location
@@ -98,6 +103,8 @@
         pitch="82.62858360903111"
         bearing="-149.39999999993972"
         title=""
+                speed="0.5"
+
       >
 
             <map-marker></map-marker>
@@ -110,6 +117,8 @@
         pitch="78.590591049207"
         bearing="-80.6000000000787"
         title=""
+                speed="0.5"
+
       >
 
             <map-marker></map-marker>
@@ -122,6 +131,8 @@
         pitch="84.20860227488376"
         bearing="-22.20000000032997"
         title=""
+                speed="0.5"
+
       >
 
       <map-marker></map-marker>
@@ -141,9 +152,12 @@
 						}, 10000)
 					})
 
-					setTimeout(() => {
+
+					geo_map.map.on('load', function(){
+						
 						geo_map.dispatchEvent(new CustomEvent('NEXT SLIDE'))
-					}, 10000)
+
+					})		
 				})
       </script>
 			</geo-map>
